@@ -1,0 +1,14 @@
+import Popular from "../components/Popular";
+import Veggie from "../components/Veggie";
+import Pages from "./Pages";
+
+function Home() {
+  return (
+    <div>
+        <Veggie/>
+        <Popular/>
+    </div>
+  )
+}
+
+export default Home
