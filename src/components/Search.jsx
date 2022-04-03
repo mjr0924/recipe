@@ -25,10 +25,11 @@ function Search() {
   );
 }
 const FormStyle = styled.form`
-  margin: 0rem 20rem;
+  margin: 0rem auto;
   div {
-    width: 100%;
+    width: 80%;
     position: relative;
+    margin: 0 auto;
   }
   input {
     border: none;

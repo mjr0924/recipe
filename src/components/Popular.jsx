@@ -33,10 +33,18 @@ const Popular = () => {
         <Splide
           options={{
             perPage: 4,
+            breakpoints: {
+              768: {
+                perPage: 2,
+              },
+              500: {
+                perPage: 1,
+              },
+            },
             arrows: false,
             pagination: false,
             drag: "free",
-            gap: "5rem",
+            gap: "1.5rem",
           }}
         >
           {popular.map((recipe) => {

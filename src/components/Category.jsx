@@ -29,29 +29,42 @@ function Category() {
 const List = styled.div`
   margin: 2rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 `;
 const Slink = styled(NavLink)`
+  @media screen and (max-width: 500px) {
+    width: 4rem;
+    height: 4rem;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin-right: 2rem;
   text-decoration: none;
   background: linear-gradient(35deg, #494949, #313131);
   width: 6rem;
   height: 6rem;
   cursor: pointer;
   transform: scale(0.8);
+
   h4 {
     color: white;
     font-size: 0.8rem;
+    padding-top: 8px;
+    @media screen and (max-width: 500px) {
+      font-size: 0.5rem;
+    }
   }
   svg {
     color: white;
     font-size: 1.5rem;
+    @media screen and (max-width: 500px) {
+      font-size: 1rem;
+    }
   }
+
   &.active {
     background: linear-gradient(to right, #f27121, #e94057);
     svg {
