@@ -8,11 +8,11 @@ import { GiKnifeFork } from "react-icons/gi";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <BrowserRouter>
         <Nav>
           <GiKnifeFork />
-          <Logo to={"/"}>deliciousss</Logo>
+          <Logo className="text-dark" to={"/"}>deliciousss</Logo>
         </Nav>
         <Search />
         <Category />
